@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <title>Juego de ahorcado</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="tittle">
+            Juego Ahorcado
+        </h1>
+    </header>
+
+    <div class="juegoPrincipal">
+        <input id="letter" type="text" placeholder="Digita una letra" maxlength="1">
+
+    </div>
+    <div class="juegoPrincipal">
+        <button id="botton">Comprobar</button>
+        <button id="bottonUser">Pista</button>
+    </div>
+    <div class="juegoPrincipal">
+        <div id="result"></div>
+    </div>
+    <div class="juegoPrincipal">
+        <h2>Intentos: </h2>
+        <div id="tries"></div>
+    </div>
+    <div class="juegoPrincipal">
+        <h2>Historial: </h2>
+        <div id="record"></div>
+    </div>
+    <div class="juegoPrincipal">
+        <h2>Victorias Usuario: </h2>
+        <div id="userWins"></div>
+    </div>
+    <div class="juegoPrincipal">
+        <h2>Victorias Computadora: </h2>
+        <div id="computerWins"></div>
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
